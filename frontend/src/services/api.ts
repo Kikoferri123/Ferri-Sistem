@@ -1,6 +1,12 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+let _apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+// Ensure the URL has a protocol prefix
+if (_apiUrl && !_apiUrl.startsWith('http://') && !_apiUrl.startsWith('https://')) {
+  _apiUrl = 'https://' + _apiUrl;
+}
+// Remove trailing slash
+const API_BASE = _apiUrl.replace(/\/+$/, '');
 const api = axios.create({ baseURL: API_BASE });
 
 api.interceptors.request.use((config) => {
