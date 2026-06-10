@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+*.env.local
+
+# Database local
+*.db
+*.sqlite3
+
+# Build
+frontend/dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads (não versionar arquivos de upload)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Deploy scripts locais
+deploy_*.py
+import_payload.json

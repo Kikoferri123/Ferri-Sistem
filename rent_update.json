@@ -1,0 +1,188 @@
+{
+  "properties": [
+    {
+      "property_name": "1 Panorama Terrace",
+      "monthly_rent": 2592.0
+    },
+    {
+      "property_name": "1 Salvador House",
+      "monthly_rent": 4800.0
+    },
+    {
+      "property_name": "1 Woodland View",
+      "monthly_rent": 3830.0
+    },
+    {
+      "property_name": "10A Vicars St",
+      "monthly_rent": 3115.16
+    },
+    {
+      "property_name": "11C Friars Walk",
+      "monthly_rent": 4200.0
+    },
+    {
+      "property_name": "12 The Mall",
+      "monthly_rent": 1800.0
+    },
+    {
+      "property_name": "120 Lower Glanmire",
+      "monthly_rent": 1050.0
+    },
+    {
+      "property_name": "128 Barrack St",
+      "monthly_rent": 2600.0
+    },
+    {
+      "property_name": "130 Deerpark",
+      "monthly_rent": 2100.0
+    },
+    {
+      "property_name": "135 Evergreen Rd",
+      "monthly_rent": 2100.0
+    },
+    {
+      "property_name": "14 Dyke Parade",
+      "monthly_rent": 14200.0
+    },
+    {
+      "property_name": "15 Wolfe Tone St",
+      "monthly_rent": 3300.0
+    },
+    {
+      "property_name": "19 Pine Street",
+      "monthly_rent": 2100.0
+    },
+    {
+      "property_name": "2 Eldred Terrace",
+      "monthly_rent": 1225.0
+    },
+    {
+      "property_name": "2 Eldred Terrace Top Floor",
+      "monthly_rent": 1001.0
+    },
+    {
+      "property_name": "2 Green St",
+      "monthly_rent": 2100.0
+    },
+    {
+      "property_name": "2 Rossan",
+      "monthly_rent": 1400.0
+    },
+    {
+      "property_name": "209 Lower Pouladuff Rd",
+      "monthly_rent": 4400.0
+    },
+    {
+      "property_name": "21 Anglesea St",
+      "monthly_rent": 4500.0
+    },
+    {
+      "property_name": "22 Turners Cross",
+      "monthly_rent": 3300.0
+    },
+    {
+      "property_name": "23 Nicholas St",
+      "monthly_rent": 4200.0
+    },
+    {
+      "property_name": "2324 Watercourse Rd",
+      "monthly_rent": 7000.0
+    },
+    {
+      "property_name": "3 Hardwick St",
+      "monthly_rent": 3445.0
+    },
+    {
+      "property_name": "36 Barrack St (top floor)",
+      "monthly_rent": 1125.0
+    },
+    {
+      "property_name": "37 Clarkes Rd",
+      "monthly_rent": 4000.0
+    },
+    {
+      "property_name": "44 GWOS",
+      "monthly_rent": 3000.0
+    },
+    {
+      "property_name": "51 Evergreen Rd",
+      "monthly_rent": 3900.0
+    },
+    {
+      "property_name": "56 Popes Hill",
+      "monthly_rent": 2150.0
+    },
+    {
+      "property_name": "6 Devonshire (ground)",
+      "monthly_rent": 1500.0
+    },
+    {
+      "property_name": "60 Great William",
+      "monthly_rent": 1166.0
+    },
+    {
+      "property_name": "6A Devonshire",
+      "monthly_rent": 3000.0
+    },
+    {
+      "property_name": "7 Devonshire St",
+      "monthly_rent": 2100.0
+    },
+    {
+      "property_name": "8 Devonshire St",
+      "monthly_rent": 1800.0
+    },
+    {
+      "property_name": "9 Copley Place",
+      "monthly_rent": 3700.0
+    },
+    {
+      "property_name": "97 Douglas St",
+      "monthly_rent": 1835.0
+    },
+    {
+      "property_name": "A6 Crawford Hall",
+      "monthly_rent": 3000.0
+    },
+    {
+      "property_name": "Apt 64 North Quay Place",
+      "monthly_rent": 3000.0
+    },
+    {
+      "property_name": "Apt1, 43 Popes Quay",
+      "monthly_rent": 3000.0
+    },
+    {
+      "property_name": "Apt1, 60 Dominick St",
+      "monthly_rent": 975.0
+    },
+    {
+      "property_name": "Apt1, 68 GGS",
+      "monthly_rent": 1250.0
+    },
+    {
+      "property_name": "Apt2, 4 Lancaster Quay",
+      "monthly_rent": 915.0
+    },
+    {
+      "property_name": "Apt2, 43 Popes Quay",
+      "monthly_rent": 800.0
+    },
+    {
+      "property_name": "Apt2, 68 GGS",
+      "monthly_rent": 1250.0
+    },
+    {
+      "property_name": "Apt3 120 Lower",
+      "monthly_rent": 1200.0
+    },
+    {
+      "property_name": "Apt3, 68 GGS",
+      "monthly_rent": 1250.0
+    },
+    {
+      "property_name": "Geral",
+      "monthly_rent": 2771.0
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "payments": [
+    {
+      "date": "2026-01-28",
+      "description": "*INET Watercourse",
+      "method": "credit",
+      "amount": 5000.0,
+      "category": "House - Rent",
+      "property_name": "2324 Watercourse Rd"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 1 Salvador",
+      "method": "credit",
+      "amount": 4800.0,
+      "category": "House - Rent",
+      "property_name": "1 Salvador House"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 120 Deerpark",
+      "method": "credit",
+      "amount": 2100.0,
+      "category": "House - Rent",
+      "property_name": "130 Deerpark"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 15 WTS",
+      "method": "credit",
+      "amount": 3300.0,
+      "category": "House - Rent",
+      "property_name": "15 Wolfe Tone St"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 19 Pine st",
+      "method": "credit",
+      "amount": 2100.0,
+      "category": "House - Rent",
+      "property_name": "19 Pine Street"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 3 Hardwick",
+      "method": "credit",
+      "amount": 3445.0,
+      "category": "House - Rent",
+      "property_name": "3 Hardwick St"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 37 Clarkes",
+      "method": "credit",
+      "amount": 4000.0,
+      "category": "House - Rent",
+      "property_name": "37 Clarkes Rd"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 60 Great W",
+      "method": "credit",
+      "amount": 1166.0,
+      "category": "House - Rent",
+      "property_name": "60 Great William"
+    },
+    {
+      "date": "2026-01-28",
+      "description": "*INET 9 Copley",
+      "method": "credit",
+      "amount": 3700.0,
+      "category": "House - Rent",
+      "property_name": "9 Copley Place"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET Ap3 120 Glan",
+      "method": "credit",
+      "amount": 1200.0,
+      "category": "House - Rent",
+      "property_name": "Apt3 120 Lower"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET Popes Quay",
+      "method": "credit",
+      "amount": 2200.0,
+      "category": "House - Rent",
+      "property_name": "Apt1, 43 Popes Quay"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 11BC Friars",
+      "method": "credit",
+      "amount": 4200.0,
+      "category": "House - Rent",
+      "property_name": "11C Friars Walk"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 2 Green St",
+      "method": "credit",
+      "amount": 2100.0,
+      "category": "House - Rent",
+      "property_name": "2 Green St"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 2 Rossan",
+      "method": "credit",
+      "amount": 1400.0,
+      "category": "House - Rent",
+      "property_name": "2 Rossan"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 23 Nicholas",
+      "method": "credit",
+      "amount": 2500.0,
+      "category": "House - Rent",
+      "property_name": "23 Nicholas St"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 36 Barrack T",
+      "method": "credit",
+      "amount": 1125.0,
+      "category": "House - Rent",
+      "property_name": "36 Barrack St (top floor)"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 44 GWOS",
+      "method": "credit",
+      "amount": 2000.0,
+      "category": "House - Rent",
+      "property_name": "44 GWOS"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 6 Crawford",
+      "method": "credit",
+      "amount": 3000.0,
+      "category": "House - Rent",
+      "property_name": "A6 Crawford Hall"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 7 Devonshire",
+      "method": "credit",
+      "amount": 2100.0,
+      "category": "House - Rent",
+      "property_name": "7 Devonshire St"
+    },
+    {
+      "date": "2026-01-29",
+      "description": "*INET 8 Devonshire",
+      "method": "credit",
+      "amount": 1600.0,
+      "category": "House - Rent",
+      "property_name": "8 Devonshire St"
+    },
+    {
+      "date": "2026-01-30",
+      "description": "97 DOUGLAS ST",
+      "method": "credit",
+      "amount": 1835.0,
+      "category": "House - Rent",
+      "property_name": "97 Douglas St"
+    },
+    {
+      "date": "2026-02-03",
+      "description": "12 THE MALL",
+      "method": "credit",
+      "amount": 1800.0,
+      "category": "House - Rent",
+      "property_name": "12 The Mall"
+    },
+    {
+      "date": "2026-02-05",
+      "description": "44 GWOS",
+      "method": "cash",
+      "amount": 1000.0,
+      "category": "House - Rent",
+      "property_name": "44 GWOS"
+    },
+    {
+      "date": "2026-02-05",
+      "description": "D/D ONIX RENTA S.L",
+      "method": "credit",
+      "amount": 2771.0,
+      "category": "House - Rent",
+      "property_name": "Geral"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET Ap2 4 Lancas",
+      "method": "credit",
+      "amount": 915.0,
+      "category": "House - Rent",
+      "property_name": "Apt2, 4 Lancaster Quay"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET Dyke Parade",
+      "method": "credit",
+      "amount": 7200.0,
+      "category": "House - Rent",
+      "property_name": "14 Dyke Parade"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET 1 68GGS",
+      "method": "credit",
+      "amount": 1250.0,
+      "category": "House - Rent",
+      "property_name": "Apt1, 68 GGS"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET 10 Vicar",
+      "method": "credit",
+      "amount": 3115.16,
+      "category": "House - Rent",
+      "property_name": "10A Vicars St"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET 2 68GGS",
+      "method": "credit",
+      "amount": 1250.0,
+      "category": "House - Rent",
+      "property_name": "Apt2, 68 GGS"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 209 Pouladuf",
+      "method": "credit",
+      "amount": 4400.0,
+      "category": "House - Rent",
+      "property_name": "209 Lower Pouladuff Rd"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET 22 Turners",
+      "method": "credit",
+      "amount": 3300.0,
+      "category": "House - Rent",
+      "property_name": "22 Turners Cross"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET 3 68GGS",
+      "method": "credit",
+      "amount": 1250.0,
+      "category": "House - Rent",
+      "property_name": "Apt3, 68 GGS"
+    },
+    {
+      "date": "2026-02-06",
+      "description": "*INET 6 Devonshire",
+      "method": "credit",
+      "amount": 1000.0,
+      "category": "House - Rent",
+      "property_name": "6 Devonshire (ground)"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET North Quay",
+      "method": "credit",
+      "amount": 3000.0,
+      "category": "House - Rent",
+      "property_name": "Apt 64 North Quay Place"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 1 Panorama",
+      "method": "credit",
+      "amount": 2592.0,
+      "category": "House - Rent",
+      "property_name": "1 Panorama Terrace"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 1 Woodland",
+      "method": "credit",
+      "amount": 3830.0,
+      "category": "House - Rent",
+      "property_name": "1 Woodland View"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 120 Glanmire",
+      "method": "credit",
+      "amount": 1050.0,
+      "category": "House - Rent",
+      "property_name": "120 Lower Glanmire"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 128 Barrack",
+      "method": "credit",
+      "amount": 1600.0,
+      "category": "House - Rent",
+      "property_name": "128 Barrack St"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 2 Eldred",
+      "method": "credit",
+      "amount": 1225.0,
+      "category": "House - Rent",
+      "property_name": "2 Eldred Terrace"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 2 Eldred T",
+      "method": "credit",
+      "amount": 1001.0,
+      "category": "House - Rent",
+      "property_name": "2 Eldred Terrace Top Floor"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 51 Evergreen",
+      "method": "credit",
+      "amount": 1400.0,
+      "category": "House - Rent",
+      "property_name": "51 Evergreen Rd"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 51 Evergreen",
+      "method": "credit",
+      "amount": 2500.0,
+      "category": "House - Rent",
+      "property_name": "51 Evergreen Rd"
+    },
+    {
+      "date": "2026-02-09",
+      "description": "*INET 6A Devon",
+      "method": "credit",
+      "amount": 2100.0,
+      "category": "House - Rent",
+      "property_name": "6A Devonshire"
+    },
+    {
+      "date": "2026-02-11",
+      "description": "*INET 135 EGR",
+      "method": "credit",
+      "amount": 2100.0,
+      "category": "House - Rent",
+      "property_name": "135 Evergreen Rd"
+    },
+    {
+      "date": "2026-02-12",
+      "description": "*INET 21 Anglesea",
+      "method": "credit",
+      "amount": 4500.0,
+      "category": "House - Rent",
+      "property_name": "21 Anglesea St"
+    },
+    {
+      "date": "2026-02-16",
+      "description": "*INET Popes Hill",
+      "method": "credit",
+      "amount": 2150.0,
+      "category": "House - Rent",
+      "property_name": "56 Popes Hill"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "14 Dyke Parade",
+      "method": "cash",
+      "amount": 7000.0,
+      "category": "House - Rent",
+      "property_name": "14 Dyke Parade"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "Watercourse",
+      "method": "cash",
+      "amount": 2000.0,
+      "category": "House - Rent",
+      "property_name": "2324 Watercourse Rd"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "128 Barrack St",
+      "method": "cash",
+      "amount": 1000.0,
+      "category": "House - Rent",
+      "property_name": "128 Barrack St"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "6A Devonshire",
+      "method": "cash",
+      "amount": 900.0,
+      "category": "House - Rent",
+      "property_name": "6A Devonshire"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "6 Devonshire",
+      "method": "cash",
+      "amount": 500.0,
+      "category": "House - Rent",
+      "property_name": "6 Devonshire (ground)"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "8 Devonshire",
+      "method": "cash",
+      "amount": 200.0,
+      "category": "House - Rent",
+      "property_name": "8 Devonshire St"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "Apt1, 43 Popes Quay",
+      "method": "cash",
+      "amount": 800.0,
+      "category": "House - Rent",
+      "property_name": "Apt1, 43 Popes Quay"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "Apt2, 43 Popes Quay",
+      "method": "cash",
+      "amount": 800.0,
+      "category": "House - Rent",
+      "property_name": "Apt2, 43 Popes Quay"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "23 Nicholas St",
+      "method": "cash",
+      "amount": 1700.0,
+      "category": "House - Rent",
+      "property_name": "23 Nicholas St"
+    },
+    {
+      "date": "2026-02-23",
+      "description": "*INET 60 Dominick",
+      "method": "credit",
+      "amount": 975.0,
+      "category": "House - Rent",
+      "property_name": "Apt1, 60 Dominick St"
+    }
+  ]
+}
