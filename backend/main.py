@@ -260,6 +260,9 @@ def startup():
 
         # Seed client users for the client portal
         _seed_client_users(db)
+
+        # Seed properties and landlords (one-time)
+        _seed_properties(db)
     finally:
         db.close()
 
@@ -354,6 +357,98 @@ def _seed_settings(db):
 @app.get("/")
 def root():
     return {"message": "Ferri Sistem API v2.0", "docs": "/docs"}
+
+def _seed_properties(db):
+    """Seed Francisco's properties and landlords (one-time)."""
+    # Check if already seeded
+    if db.query(Property).count() > 0:
+        return
+
+    print("[SEED] Seeding properties and landlords...")
+
+    # Create landlords (companies)
+    landlords_data = {
+        "FFP": Landlord(code="LD001", name="FFP", notes="Francisco's company"),
+        "VFFP": Landlord(code="LD002", name="VFFP", notes="Francisco's company"),
+        "Fenota": Landlord(code="LD003", name="Fenota", notes="Francisco's company"),
+        "Dream": Landlord(code="LD004", name="Dream", notes="Francisco's company"),
+        "Yendrys": Landlord(code="LD005", name="Yendrys", notes="Francisco's company"),
+        "College Green": Landlord(code="LD006", name="College Green", notes="Francisco's company"),
+    }
+    for ll in landlords_data.values():
+        db.add(ll)
+    db.flush()
+
+    # Status mapping
+    status_map = {
+        "Purchased": PropertyStatus.ATIVO,
+        "Sale agreed": PropertyStatus.EM_NEGOCIACAO,
+        "Sale agreed / cancelled": PropertyStatus.INATIVO,
+        "Bidding": PropertyStatus.EM_NEGOCIACAO,
+        "Lost": PropertyStatus.INATIVO,
+    }
+
+    properties = [
+        {"code": "PR001", "name": "11 Cruise Park Avenue", "address": "11 Cruise Park Avenue", "monthly_rent": 3100, "type": PropertyType.CASA, "status": "Purchased", "company": "FFP",
+         "notes": "Price: €550,000 | Deposit: €165,000 | Mortgage: €385,000 | APRC: 5.45 | Term: 35y | Mortgage/mo: €2,054.92 | ROI/mo: €1,045.08 (7.60%)"},
+        {"code": "PR002", "name": "608 Collins Av", "address": "608 Collins Avenue", "monthly_rent": 6000, "type": PropertyType.CASA, "status": "Sale agreed", "company": "VFFP",
+         "notes": "Price: €560,000 | Deposit: €168,000 | Mortgage: €392,000 | APRC: 5.45 | Term: 35y | Mortgage/mo: €2,092.28 | ROI/mo: €3,907.72 (27.91%)"},
+        {"code": "PR003", "name": "62 College View", "address": "62 College View", "monthly_rent": 2450, "type": PropertyType.APARTAMENTO, "status": "Sale agreed / cancelled", "company": "VFFP",
+         "notes": "Price: €255,000 | Service Charge: €1,700 | Deposit: €80,000 | Mortgage: €175,000 | APRC: 5.45 | Term: 35y | Mortgage/mo: €934.05 | ROI/mo: €1,515.95 (20.61%)"},
+        {"code": "PR004", "name": "1 Singland - Limerick", "address": "1 Singland, Limerick", "monthly_rent": 4100, "type": PropertyType.CASA, "status": "Sale agreed", "company": "VFFP",
+         "notes": "Price: €290,000 | Deposit: €87,000 | Mortgage: €203,000 | APRC: 5.45 | Term: 35y | Mortgage/mo: €1,083.50 | ROI/mo: €3,016.50 (41.61%)"},
+        {"code": "PR005", "name": "25 Turnpike", "address": "25 Turnpike", "monthly_rent": 3500, "type": PropertyType.CASA, "status": "Bidding", "company": "VFFP",
+         "notes": "Price: €257,500 | Service Charge: €3,400 | Deposit: €257,500 | Mortgage: €0 | APRC: 5.45 | Term: 35y | Mortgage/mo: €0 | ROI/mo: €3,500.00 (14.99%)"},
+        {"code": "PR006", "name": "28 Linnbhla", "address": "28 Linnbhla", "monthly_rent": 3200, "type": PropertyType.CASA, "status": "Lost", "company": "FFP",
+         "notes": "Price: €255,000 | Deposit: €255,000 | Mortgage: €0 | APRC: 5.45 | Term: 35y | Mortgage/mo: €0 | ROI/mo: €3,200.00 (15.06%)"},
+        {"code": "PR007", "name": "6 O'Donoghue Av - Limerick", "address": "6 O'Donoghue Avenue, Limerick", "monthly_rent": 4400, "type": PropertyType.CASA, "status": "Sale agreed", "company": "Fenota",
+         "notes": "Price: €275,000 | Deposit: €82,500 | Mortgage: €192,500 | APRC: 5.45 | Term: 35y | Mortgage/mo: €1,027.46 | ROI/mo: €3,372.54 (49.06%)"},
+        {"code": "PR008", "name": "6 Crosses Court - Cork", "address": "6 Crosses Court, Cork", "monthly_rent": 5200, "type": PropertyType.CASA, "status": "Sale agreed", "company": "Dream",
+         "notes": "Price: €370,000 | Deposit: €111,000 | Mortgage: €259,000 | APRC: 5.45 | Term: 35y | Mortgage/mo: €1,382.40 | ROI/mo: €3,817.60 (41.27%)"},
+        {"code": "PR009", "name": "113 Saint Michaels Road - Cork", "address": "113 Saint Michaels Road, Cork", "monthly_rent": 3450, "type": PropertyType.CASA, "status": "Sale agreed", "company": "Yendrys",
+         "notes": "Price: €285,000 | Deposit: €85,500 | Mortgage: €199,500 | APRC: 5.45 | Term: 35y | Mortgage/mo: €1,064.82 | ROI/mo: €2,385.18 (33.48%)"},
+        {"code": "PR010", "name": "32 - Linda", "address": "32 Linda", "monthly_rent": 4600, "type": PropertyType.CASA, "status": "Sale agreed", "company": "College Green",
+         "notes": "Price: €440,000 | Deposit: €132,000 | Mortgage: €308,000 | APRC: 4.75 | Term: 30y | Mortgage/mo: €1,606.67 | ROI/mo: €2,993.33 (27.21%)"},
+        {"code": "PR011", "name": "10 Angleasea - Cork", "address": "10 Angleasea, Cork", "monthly_rent": 5300, "type": PropertyType.CASA, "status": "Sale agreed", "company": "College Green",
+         "notes": "Price: €415,000 | Deposit: €124,500 | Mortgage: €290,500 | APRC: 4.75 | Term: 30y | Mortgage/mo: €1,515.39 | ROI/mo: €3,784.61 (36.48%)"},
+        {"code": "PR012", "name": "52-52 Carrer Querol - Mas del Plata", "address": "52-52 Carrer Querol, Mas del Plata", "monthly_rent": 0, "type": PropertyType.CASA, "status": "Purchased", "company": "FFP",
+         "notes": "Price: €1,100,000"},
+        {"code": "PR013", "name": "Salão Americana - Av Doosan 265", "address": "Av Doosan 265, Americana", "monthly_rent": 4200, "type": PropertyType.OUTRO, "status": "Purchased", "company": "VFFP",
+         "notes": "Price: R$1,500,000"},
+        {"code": "PR014", "name": "Rua Anair Aparecida Viel 189", "address": "Rua Anair Aparecida Viel 189", "monthly_rent": 0, "type": PropertyType.CASA, "status": "Purchased", "company": "FFP",
+         "notes": "Price: R$460,000"},
+        {"code": "PR015", "name": "Casa Tatui Pai", "address": "Tatuí", "monthly_rent": 0, "type": PropertyType.CASA, "status": "Purchased", "company": "FFP",
+         "notes": "Price: R$1,500,000"},
+        {"code": "PR016", "name": "Casa Portugal Mãe", "address": "Portugal", "monthly_rent": 0, "type": PropertyType.CASA, "status": "Purchased", "company": "FFP",
+         "notes": "Price: €380,000"},
+        {"code": "PR017", "name": "Terreno Shangrylla 2 - 50% (Marcio)", "address": "Quadra 60 Lote 33, Shangrylla 2", "monthly_rent": 0, "type": PropertyType.OUTRO, "status": "Purchased", "company": "FFP",
+         "notes": "Price: R$5,500 | 50% ownership with Marcio"},
+        {"code": "PR018", "name": "Terreno Fazenda Medeiros - 50% (Plinio)", "address": "Fazenda Medeiros", "monthly_rent": 0, "type": PropertyType.OUTRO, "status": "Purchased", "company": "FFP",
+         "notes": "Price: R$1,000,000 | 50% ownership with Plinio"},
+        {"code": "PR019", "name": "Terreno Jalapão - 33%", "address": "Jalapão", "monthly_rent": 0, "type": PropertyType.OUTRO, "status": "Purchased", "company": "FFP",
+         "notes": "Price: R$20,000 | 33% ownership | Nome da mãe"},
+        {"code": "PR020", "name": "Fazenda Cerro do Bau - Herval", "address": "Cerro do Bau, Herval, Mat 5465", "monthly_rent": 0, "type": PropertyType.OUTRO, "status": "Purchased", "company": "FFP",
+         "notes": "Price: R$50,000 | Nome da mãe"},
+    ]
+
+    for p in properties:
+        ll = landlords_data.get(p["company"])
+        prop = Property(
+            code=p["code"],
+            name=p["name"],
+            address=p.get("address", ""),
+            monthly_rent=p.get("monthly_rent", 0),
+            type=p.get("type", PropertyType.CASA),
+            status=status_map.get(p.get("status", ""), PropertyStatus.ATIVO),
+            owner_name=p["company"],
+            landlord_id=ll.id if ll else None,
+            notes=p.get("notes", ""),
+        )
+        db.add(prop)
+
+    db.commit()
+    print(f"[SEED] Created {len(landlords_data)} landlords and {len(properties)} properties.")
+
 
 @app.get("/health")
 def health():
