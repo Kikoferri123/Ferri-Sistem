@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from database import engine, Base, SessionLocal
-from models import User, Setting, UserRole, Property, Client, Landlord, Employee, Message, News, RewardPoints, RewardTransaction, CheckInOut, Review, FAQ, Referral
+from models import User, Setting, UserRole, Property, PropertyType, PropertyStatus, Client, Landlord, Employee, Message, News, RewardPoints, RewardTransaction, CheckInOut, Review, FAQ, Referral
 from auth import get_password_hash
 from sqlalchemy import inspect, text
 import os
