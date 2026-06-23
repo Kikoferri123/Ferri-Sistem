@@ -263,6 +263,10 @@ def startup():
 
         # Seed properties and landlords (one-time)
         _seed_properties(db)
+
+        # Set all properties to active
+        db.query(Property).update({Property.status: PropertyStatus.ATIVO})
+        db.commit()
     finally:
         db.close()
 
